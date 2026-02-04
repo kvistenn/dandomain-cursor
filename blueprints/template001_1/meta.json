@@ -1,0 +1,26 @@
+{
+    "PARENT": "template001",
+    "TEMPLATE_AUTHOR": "System",
+    "TEMPLATE_URL": "#",
+    "TEMPLATE_DATE": "August 2014",
+    "TEMPLATE_NAME": {
+        "TITLE": {
+            "DK": "Rooty",
+            "UK": "Rooty",
+            "NO": "Rooty",
+            "SE": "Rooty",
+            "DE": "Rooty"
+        }
+    },
+    "TEMPLATE_DESCRIPTION": {
+        "TITLE": {
+            "DK": "Giver maksimal fleksibilitet og fungerer godt uanset om du har f&aring; eller mange produkter og om du s&aelig;lger dine produkter i flere lande. Dette design er responsive.<br \/><br \/>Temaer:<br \/><a href='rock-theme'>Rock<\/a>, <a href='desert-theme'>Desert<\/a> og <a href='france-theme'>France<\/a>",
+            "UK": "Provides maximum flexibility and works well with both few or many products and for merchants with sales in more than one country. This design is responsive.<br \/><br \/>Themes:<br \/><a href='rock-theme'>Rock<\/a>, <a href='desert-theme'>Desert<\/a> and <a href='france-theme'>France<\/a>",
+            "NO": "Gir maksimal fleksibilitet og fungerer bra uansett om du har f&aring; eller mange produkter, og om du vil selge produktene dine i flere land. Denne design er responsiv.<br \/><br \/>Temaer:<br \/><a href='rock-theme'>Rock<\/a>, <a href='desert-theme'>Desert<\/a> og <a href='france-theme'>France<\/a>",
+            "SE": "Ger maximal flexibilitet och fungerar utm&auml;rkt, vare sig du har f&aring; eller flera produkter samt om du vill s&auml;lja dina produkter i flera olika l&auml;nder. Denna design &auml;r responsiv.<br \/><br \/>Teman:<br \/><a href='rock-theme'>Rock<\/a>, <a href='desert-theme'>Desert<\/a> och <a href='france-theme'>France<\/a>",
+            "DE": "Maximale Flexibilit&auml;t. Funktioniert sowohl mit vielen, als auch mit wenigen Produkten. Auch f\u00fcr H&aumlndler in verschiedenen L&auml;ndern geeignet.<br \/><br \/>Varianten:<br \/><a href='rock-theme'>Rock<\/a>, <a href='desert-theme'>Desert<\/a> und <a href='france-theme'>France<\/a>"
+        }
+    },
+    "DEMO_LINK": "rooty-theme",
+    "TEMPLATE_VERSION": "2.0.1"
+}

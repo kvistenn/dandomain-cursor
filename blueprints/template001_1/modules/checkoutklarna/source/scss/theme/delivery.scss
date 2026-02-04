@@ -1,0 +1,11 @@
+.w-checkout-delivery__normal {
+  .deliveryMethodContainer,
+  .DroppointAddressContainer .DroppointAddressContent .panel-body {
+    .form-group {
+      background-color: $backgroundColor;
+    }
+  }
+  .deliveryMethodName {
+    color: $fontColor;
+  }
+}

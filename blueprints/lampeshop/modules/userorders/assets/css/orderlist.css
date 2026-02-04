@@ -1,0 +1,23 @@
+[data-tooltip-trigger] .tooltip {
+    transition: transform 0.1s ease-in-out;
+    transform: translateY(0);
+    position: absolute;
+}
+[data-tooltip-trigger] .tooltip::before {
+    content: none;
+}
+[data-tooltip-trigger] .tooltip.invisible {
+    transform: translateY(20px);
+}
+
+[data-tooltip-trigger] .tooltip-arrow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(45deg)translateX(-50%);
+    left: 50%;
+    bottom: -5px;
+    z-index: -1;
+}

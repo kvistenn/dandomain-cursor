@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+    font-family: 'Inter', sans-serif;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '';
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+}
+
+.noscrollbar::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+.noscrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.arrow {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>');
+    background-repeat: no-repeat;
+    background-position: top 50% right 10px;
+    background-size: auto 14px;
+}
+
+.tooltip {
+    position: relative;
+}
+.tooltip::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-7-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 9a.75.75 0 0 0 0 1.5h.253a.25.25 0 0 1 .244.304l-.459 2.066A1.75 1.75 0 0 0 10.747 15H11a.75.75 0 0 0 0-1.5h-.253a.25.25 0 0 1-.244-.304l.459-2.066A1.75 1.75 0 0 0 9.253 9H9Z" clip-rule="evenodd" /></svg>');
+}
+.tooltip .tooltiptext {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0.25rem;
+    z-index: 1000;
+    transition: opacity 0.3s, bottom 0.3s;
+    min-width: 200px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.tooltip .tooltiptext::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+    transform: translateX(-50%);
+}
+.tooltip:hover .tooltiptext {
+    bottom: 120%;
+    opacity: 100;
+    pointer-events: auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.sortable-placeholder {
+    height: 60px;
+    background: #f0f0f0;
+    border: 2px dashed #ccc;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+[data-shop="productslist"] li {
+    cursor: move;
+}
+
+[data-shop="productslist"] li:hover {
+    background-color: #f9f9f9;
+}
+
+[data-shop="productslist"] .ui-sortable-helper {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}

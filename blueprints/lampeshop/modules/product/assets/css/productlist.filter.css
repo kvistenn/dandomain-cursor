@@ -1,0 +1,18 @@
+@media(max-width: 1280px) {
+    [data-filter="filter"] {
+        transform: translateX(-100%);
+        transition: transform ease 0.15s;
+    }
+    [data-filter="filter"].show {
+        transform: translateX(0);
+    }
+    [data-filter="overlay"] {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity ease 0.15s;
+    }
+    [data-filter="overlay"].show {
+        opacity: 100;
+        pointer-events: auto;
+    }
+}

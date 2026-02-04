@@ -1,0 +1,75 @@
+[data-brands="slider"] .slick-slide {
+    margin: 0 10px;
+}
+[data-brands="slider"] .slick-list {
+    margin: 0 -10px;
+}
+
+[data-brands="slider"]:not(.slick-initialized) {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+[data-brands="slider"]:not(.slick-initialized) > a:nth-child(2) ~ a {
+    display: none;
+}
+
+@media(min-width: 480px) {
+    [data-brands="slider"]:not(.slick-initialized) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    [data-brands="slider"]:not(.slick-initialized) > a:nth-child(2) ~ a {
+        display: block;
+    }
+    [data-brands="slider"]:not(.slick-initialized) > a:nth-child(3) ~ a {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    [data-brands="slider"]:not(.slick-initialized) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    [data-brands="slider"]:not(.slick-initialized) > a:nth-child(3) ~ a {
+        display: block;
+    }
+    [data-brands="slider"]:not(.slick-initialized) > a:nth-child(5) ~ a {
+        display: none;
+    }
+}
+
+@media(min-width: 1024px) {
+    [data-brands="slider"]:not(.slick-initialized) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    [data-brands="slider"]:not(.slick-initialized) > a:nth-child(5) ~ a {
+        display: block;
+    }
+    [data-brands="slider"]:not(.slick-initialized) > a:nth-child(6) ~ a {
+        display: none;
+    }
+}
+
+@media(min-width: 1240px) {
+    [data-brands="slider"]:not(.slick-initialized) {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    [data-brands="slider"]:not(.slick-initialized) > a:nth-child(6) ~ a {
+        display: block;
+    }
+    [data-brands="slider"]:not(.slick-initialized) > a:nth-child(7) ~ a {
+        display: none;
+    }
+}
+
+@media(min-width: 1600px) {
+    [data-brands="slider"]:not(.slick-initialized) {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    [data-brands="slider"]:not(.slick-initialized) > a:nth-child(7) ~ a {
+        display: block;
+    }
+    [data-brands="slider"]:not(.slick-initialized) > a:nth-child(8) ~ a {
+        display: none;
+    }
+}

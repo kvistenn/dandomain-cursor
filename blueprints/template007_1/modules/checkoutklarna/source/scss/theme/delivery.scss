@@ -1,0 +1,23 @@
+.w-checkout-delivery__normal {
+  .deliveryMethodContainer .form-group {
+    margin-bottom: .5em;
+    padding: .5em
+  }
+  .DroppointAddressContent .form-group {
+    background-color: $backgroundColor;
+  }
+  .deliveryMethodContainer,
+  .DroppointAddressContainer .DroppointAddressContent .panel-body {
+    .form-group {
+      border: 1px solid $borderColor;
+    }
+  }
+  .deliveryMethodName {
+    color: $fontColor;
+  }
+  .deliveryMethodNote hr,
+  .deliveryTimeContainer hr {
+    display: block !important;
+    margin: 1em auto;
+  }
+}

@@ -1,0 +1,274 @@
+[data-controller="description"] .grid {
+    display: grid;
+}
+
+[data-controller="description"] .grid:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+[data-controller="description"] .grid[data-columns="2"] {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+[data-controller="description"] .grid[data-columns="3"] {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+[data-controller="description"] .grid[data-columns="4"] {
+    grid-template-columns: repeat(4, 1fr);
+}
+[data-controller="description"] .grid[data-rows="1"] {
+    grid-template-rows: repeat(1, 1fr);
+}
+
+[data-controller="description"] .grid[data-rows="2"] {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+[data-controller="description"] .grid[data-rows="3"] {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+[data-controller="description"] .grid .grid-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+[data-controller="description"] .grid[data-columns="2"] .grid-cell:first-child {
+    padding-right: 1.5rem;
+}
+
+[data-controller="description"] .grid[data-columns="2"] .grid-cell:last-child {
+    padding-left: 1.5rem;
+}
+
+[data-controller="description"] h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+[data-controller="description"] h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+[data-controller="description"] h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+[data-controller="description"] h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+[data-controller="description"] h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+[data-controller="description"] h6 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+[data-controller="description"] p {
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.75rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+[data-controller="description"] ul {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+[data-controller="description"] ul li {
+    display: flex;
+    align-items: center;
+}
+
+[data-controller="description"] ul li::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.5 12.75l6 6 9-13.5' /%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center left;
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+[data-controller="description"] ol {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+
+[data-controller="description"] li {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+[data-controller="description"] a {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+[data-controller="description"] a:hover {
+    text-decoration: underline;
+}
+
+[data-controller="description"] a:active {
+    text-decoration: underline;
+}
+
+[data-controller="description"] a:visited {
+    text-decoration: underline;
+}
+
+[data-controller="description"] table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+[data-controller="description"] table th {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+[data-controller="description"] table td {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+[data-controller="description"] table tr:nth-child(odd) {
+    background-color: #f7fafc;
+}
+
+[data-controller="description"] table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+[data-controller="description"] table tr:first-child {
+    background-color: #f7fafc;
+}
+
+[data-controller="description"] table tr:last-child {
+    background-color: #f7fafc;
+}
+
+[data-controller="description"] table tr:first-child th {
+    background-color: #f7fafc;
+}
+
+[data-controller="description"] table tr:last-child th {
+    background-color: #f7fafc;
+}
+
+[data-controller="description"] table tr:first-child td {
+    background-color: #f7fafc;
+}
+
+[data-controller="description"] table tr:last-child td {
+    background-color: #f7fafc;
+}
+
+[data-controller="description"] table tr:first-child th:first-child {
+    border-top-left-radius: 0.25rem;
+}
+
+[data-controller="description"] table tr:first-child th:last-child {
+    border-top-right-radius: 0.25rem;
+}
+
+[data-controller="description"] table tr:last-child td:first-child {
+    border-bottom-left-radius: 0.25rem;
+}
+
+[data-controller="description"] table tr:last-child td:last-child {
+    border-bottom-right-radius: 0.25rem;
+}
+
+[data-controller="description"] table tr:first-child td:first-child {
+    border-top-left-radius: 0.25rem;
+}
+
+[data-controller="description"] table tr:first-child td:last-child {
+    border-top-right-radius: 0.25rem;
+}
+
+[data-controller="description"] table tr:last-child th:first-child {
+    border-bottom-left-radius: 0.25rem;
+}
+
+[data-controller="description"] table tr:last-child th:last-child {
+    border-bottom-right-radius: 0.25rem;
+}
+
+
+@media (max-width: 1024px) {
+    [data-controller="description"] .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    [data-controller="description"] .grid[data-columns="2"] .grid-cell:first-child {
+        padding-right: 0rem;
+        padding-bottom: 2rem;
+    }
+    
+    [data-controller="description"] .grid[data-columns="2"] .grid-cell:last-child {
+        padding-left: 0rem;
+    }
+
+    [data-controller="description"] .grid[data-columns="2"].image-first {
+        flex-direction: column-reverse;
+    }
+
+    [data-controller="description"] .grid[data-columns="2"].image-first .grid-cell:first-child {
+        padding-right: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    [data-controller="description"] .grid[data-columns="2"].image-first .grid-cell:last-child {
+        padding-left: 0rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    [data-controller="description"] ul li, [data-controller="description"] ol li {
+        font-size: 1rem;
+    }
+
+    [data-controller="description"] ul li::before {
+        height: 1rem;
+        width: 1rem;
+    }
+
+}

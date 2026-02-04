@@ -1,0 +1,22 @@
+.m-checkout--stacked {
+  color: $fontColor;
+
+  .panel-border,
+  label {
+    color: $fontColor;
+
+    label[for='m-checkout-country'],
+    label[for='m-checkout-zipcode'],
+    .deliveryMethodGroupProductsHeader,
+    .deliveryTimeContainer > label > strong,
+    label[for='m-checkout-del-comment'],
+    label[for='m-checkout-deliverymessage'] {
+      color: $strongFontColor;
+    }
+  }
+  .form-input,
+  .input-group .input-group-addon:first-child,
+  .input-group .input-group-main:first-child {
+    border-color: $borderColor !important;
+  }
+}

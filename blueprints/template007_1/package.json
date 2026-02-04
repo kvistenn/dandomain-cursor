@@ -1,0 +1,36 @@
+{
+  "author": "Platform",
+  "name": "@template/template007-simpl",
+  "version": "1.0.0",
+  "description": "Responsive template",
+  "keywords": [
+    "responsive",
+    "e-commerce",
+    "template",
+    "sass",
+    "javascript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "breakpoint-slicer": "^2.0.0",
+    "compass-mixins-template": "^0.12.15",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-uglify": " ^2.2.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "grunt": "^1.5.3",
+    "load-grunt-tasks": "^5.1.0",
+    "sass": "^1.51.0"
+  },
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "scripts": {
+    "gulp": "node_modules/grunt/bin/grunt"
+  }
+}

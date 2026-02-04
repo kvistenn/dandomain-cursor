@@ -1,0 +1,60 @@
+{
+  "author": "Bewise",
+  "name": "lampeshop",
+  "version": "1.0.0",
+  "description": "Responsive template",
+  "keywords": [
+    "responsive",
+    "e-commerce",
+    "template",
+    "sass",
+    "javascript"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.9",
+    "animate.css": "^4.1.1",
+    "autoprefixer": "^10.4.13",
+    "breakpoint-sass": "^2.7.1",
+    "breakpoint-slicer": "^2.0.0",
+    "compass-mixins-template": "^0.12.15",
+    "grunt": "^1.5.3",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-env": "^1.0.1",
+    "grunt-postcss": "^0.9.0",
+    "grunt-rollup": "^12.0.0",
+    "grunt-sass": "^3.1.0",
+    "grunt-terser": "^2.0.0",
+    "load-grunt-tasks": "^5.1.0",
+    "postcss": "^8.3.0",
+    "sass": "^1.53.0",
+    "tailwind-animatecss": "^1.0.0",
+    "tailwindcss": "^3.2.4",
+    "terser": "^5.13.1"
+  },
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.18.6",
+    "@babel/runtime-corejs3": "^7.18.6",
+    "core-js": "^3.23.3"
+  },
+  "scripts": {
+    "gulp": "node_modules/grunt/bin/grunt"
+  },
+  "browserslist": [
+    "defaults and supports es6-module",
+    "maintained node versions"
+  ]
+}
