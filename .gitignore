@@ -1,0 +1,2 @@
+# node_modules in blueprint subfolders
+blueprints/**/node_modules/
