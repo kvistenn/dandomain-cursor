@@ -1,1 +1,24 @@
-{"TEMPLATE_AUTHOR":"System","TEMPLATE_URL":"#","TEMPLATE_DATE":"February 2025","TEMPLATE_NAME":{"TITLE":{"DK":"Modular","UK":"Modular","NO":"Modular","SE":"Modular"}},"TEMPLATE_DESCRIPTION":{"TITLE":{"DK":"Modular er et tema baseret på template007 med Tailwind CSS og Gulp.","UK":"Modular is a theme based on template007 with Tailwind CSS and Gulp.","NO":"Modular er et tema basert på template007 med Tailwind CSS og Gulp.","SE":"Modular är ett tema baserat på template007 med Tailwind CSS och Gulp."}},"DEMO_LINK":"modular-theme","PARENT":"template007","TEMPLATE_VERSION":"1.0.0"}
+{
+    "TEMPLATE_AUTHOR": "Platform",
+    "TEMPLATE_URL": "#",
+    "TEMPLATE_DATE": "February 2026",
+    "TEMPLATE_NAME": {
+        "TITLE": {
+            "DK": "Modular",
+            "UK": "Modular",
+            "NO": "Modular",
+            "SE": "Modular"
+        }
+    },
+    "TEMPLATE_DESCRIPTION": {
+        "TITLE": {
+            "DK": "Et modulært og hurtigt tema bygget med Tailwind CSS 4.1 og Gulp. Dette tema er designet til at være hurtigt, responsivt og nemt at tilpasse med modulær arkitektur.",
+            "UK": "A modular and fast theme built with Tailwind CSS 4.1 and Gulp. This theme is designed to be fast, responsive, and easy to customize with modular architecture.",
+            "NO": "Et modulært og raskt tema bygget med Tailwind CSS 4.1 og Gulp. Dette temaet er designet for å være raskt, responsivt og lett å tilpasse med modulær arkitektur.",
+            "SE": "Ett modulärt och snabbt tema byggt med Tailwind CSS 4.1 och Gulp. Detta tema är designat för att vara snabbt, responsivt och lätt att anpassa med modulär arkitektur."
+        }
+    },
+    "DEMO_LINK": "modular",
+    "PARENT": "template008",
+    "TEMPLATE_VERSION": "1.0.0"
+}

@@ -1,16 +1,23 @@
 {strip}
-{*** Critical CSS: preload for non-blocking load, apply on load; noscript fallback ***}
-{addLink href='assets/css/libs.css' rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'"}
-{addLink href='assets/css/tailwind.css' rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'"}
-<noscript><link rel="stylesheet" href="{$template.cdn}{locateFile file='assets/css/libs.css'}"><link rel="stylesheet" href="{$template.cdn}{locateFile file='assets/css/tailwind.css'}"></noscript>
+{*** Library CSS ***}
+{addLink href='assets/css/libs.css'}
 
-{*** Framework JS: defer to avoid blocking render ***}
+{*** Template CSS ***}
+{addLink href='assets/css/template.css'}
+
+{*** Print CSS ***}
+{addLink href='assets/css/print.css' media='print'}
+
+{*** Framework JS ***}
 {$bundleVersion = $template.settings.BUNDLE_VERSION}
 {if isset($bundleVersion) && $bundleVersion !== "1.0.0"}
-    {addScript src="assets/js/{$bundleVersion}/app.js" defer=""}
+    {addScript src="assets/js/{$bundleVersion}/app.js"}
 {else}
-    {addScript src='assets/js/app.js' defer=""}
+    {addScript src='assets/js/app.js'}
 {/if}
+
+{*** Scripts JS ***}
+{addScript src='assets/js/template.js'}
 
 {$columnClass = "col-s-4 col-m-12 col-l-12 col-xl-24"}
 {collection assign=boxes controller=moduleBox}
@@ -63,31 +70,17 @@
     <body id="ng-app" data-ng-app="platform-app" data-ng-strict-di class="type-{$page.name} page{$page.id} {if $page.isFrontPage}frontpage{/if}" itemscope itemtype="http://schema.org/WebPage">
 
         {* Cookie consent *}
-        {include file="modules/widgets/cookie/cookie.tpl"}
+        {* Modules will be added here as they are redesigned *}
 
-        <input type="checkbox" id="toggleSidebar" hidden />
         <div id="site-wrapper">
-
-            {* SIDEBAR *}
-            {include file="modules/widgets/sidebar/sidebar.tpl"}
-
-            {* OVERLAY *}
-            <label for="toggleSidebar" id="site-overlay"></label>
-
             {* CONTENT *}
             <main id="site-content">
 
                 {* HEADER *}
                 {include file='partials/top.tpl'}
 
-                {* USP *}
-                {include file="modules/widgets/usp/usp.tpl"}
-
-                {* SLICK *}
-                {include file='modules/widgets/slick/slick.tpl'}
-
                 {if !$page.isFrontPage and ($template.settings.SETTINGS_SHOW_BREADCRUMB or $template.settings.SETTINGS_SHOW_PRINT)}
-                    <div class="container with-xlarge toolbar">
+                    <div class="container toolbar">
                         {if $template.settings.SETTINGS_SHOW_BREADCRUMB}
                             {* Breadcrumbs / navigation of the entire site *}
                             {breadcrumbs}
@@ -95,40 +88,21 @@
                     </div>
                 {/if}
 
-                <div class="container with-xlarge page-content">
+                <div class="container page-content">
                     <div class="row">
 
                         {if !empty($boxes.left) && !$isProductListPage}
-                            {include file='modules/column/column.tpl' boxes=$boxes.left}
+                            {* Left column will be added when modules are redesigned *}
                         {/if}
 
                         <div class="{$columnClass}">
                             {* Notification *}
-                            {include file="modules/widgets/notification/notification.tpl"}
+                            {* Modules will be added here as they are redesigned *}
 
                             {if $page.isFrontPage}
-
-                                {* CATEGORIES *}
-                                {if $general.isShop}
-                                    {include file="modules/widgets/categories/categories.tpl"}
-                                {/if}
-
                                 <section class="section">
                                     {pageTypeInclude}
                                 </section>
-
-                                {* PRODUCTS *}
-                                {if $general.isShop}
-                                    {collection assign=featured controller=productList focus=frontpage orderBy=Sorting}
-                                    {if $featured->getActualSize() gt 0}
-                                        <section class="section">
-                                            <header class="page-title">
-                                                <h3>{$text.PRODUCT_CATALOG_FOCUS_FRONTPAGE_HEADLINE}</h3>
-                                            </header>
-                                            {include file='modules/product/product-list-combined.tpl' productlist=$featured onlyProducts=true}
-                                        </section>
-                                    {/if}
-                                {/if}
                             {else}
                                 {pageTypeInclude}
                             {/if}
@@ -136,7 +110,7 @@
                         </div>
 
                         {if !empty($boxes.right)}
-                            {include file='modules/column/column.tpl' boxes=$boxes.right}
+                            {* Right column will be added when modules are redesigned *}
                         {/if}
                     </div>
                 </div>
@@ -145,11 +119,6 @@
                 {include file='partials/bottom.tpl'}
             </main>
         </div>
-
-        {* General overlays *}
-        {if $shop and $shop.priceTerms}
-            {include file='modules/widgets/overlay/overlay.tpl' dataId='priceTerms' dataItemId=$shop.priceTerms.id}
-        {/if}
 
         {body_include}
     </body>

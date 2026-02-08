@@ -19,18 +19,19 @@
 {/if}
 
 {*** Iubenda cookie consent solution ***}
-{include file="modules/widgets/iubenda/iubenda.tpl"}
+{* Modules will be added here as they are redesigned *}
 
 <!--[if lte IE 9]>
 <script src="{$template.cdn}{locateFile file="assets/js/ie.js"}"></script>
 <link href="{$template.cdn}{locateFile file="assets/css/ie.css"}" rel="stylesheet" type="text/css">
-<link href="{$template.cdn}{locateFile file="assets/css/template.ie.css"}" rel="stylesheet" type="text/css">
 <![endif]-->
 
-{*** Preconnect (dns lookup) for theme assets only - no Font Awesome or external fonts ***}
+{*** Preconnect (dns lookup) to appropriate domains ***}
 <link rel="preconnect" href="{$template.cdn}" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
 {*** Loads link assets ***}
+<link rel="stylesheet" href="{$template.cdn}/_design/common/libs/font-awesome/latest/css/font-awesome.dirty.min.css">
 {foreach $head.links as $link}<link {foreach $link->attributes as $k => $v}{$k}="{$v}" {/foreach}>
 {/foreach}
 
@@ -85,11 +86,10 @@
 </script>
 
 {*** Add Google+ Author and Publisher ***}
-{include file="modules/widgets/meta/google.tpl"}
+{* Modules will be added here as they are redesigned *}
 
 {*** Google integrations ***}
-{include file="modules/widgets/integrations/google_analytics.tpl"}
-{include file="modules/widgets/integrations/google_tagsmanager.tpl"}
+{* Modules will be added here as they are redesigned *}
 
 {*** Add JS to head from Design Manager ***}
 {includeScript file='partials/head.js.tpl'}

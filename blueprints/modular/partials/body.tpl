@@ -41,45 +41,18 @@
 {/foreach}
 
 {*** Facebook like ***}
-{if isset($settings.social_facebook) && $settings.social_facebook && (isset($cookieConsent.consent) && $cookieConsent.consent['MARKETING'])}
-    {if strtolower($general.languageIso) === "uk"}
-        {$lang = "en_US"}
-    {else}
-        {$lang = $general.languageIso639|cat:"_"|cat:$general.languageIso}
-    {/if}
-
-    <div id="fb-root"></div>
-
-    {$facebookSrc = "//connect.facebook.net/{$lang}/sdk.js#xfbml=1{if !empty($settings.fb_appId)}&amp;appId={$settings.fb_appId}{/if}&amp;version=v2.0"}
-
-        
-    {$scriptAttriubtes = ''}
-    {if $template.settings.COOKIE_TYPE === 'IUBENDA'}
-        {$scriptAttriubtes = {getIubendaAttributes purposes='3'}}
-    {/if}
-
-    <script id="facebook-jssdk" {$scriptAttriubtes} src="{$facebookSrc}" async></script>
-{/if}
+{* Modules will be added here as they are redesigned *}
 
 {*** Twitter tweet ***}
-{if isset($settings.social_twitter) && $settings.social_twitter && (isset($cookieConsent.consent) && $cookieConsent.consent['FUNCTIONAL'] && $cookieConsent.consent['STATISTICS'])}
-    {$twitterSrc = "//platform.twitter.com/widgets.js"}
-
-    {$scriptAttriubtes = ''}
-    {if $template.settings.COOKIE_TYPE === 'IUBENDA'}
-        {$scriptAttriubtes = {getIubendaAttributes purposes='3'}}
-    {/if}
-
-    <script id="twitter-wjs" {$scriptAttriubtes} src="{$twitterSrc}" async></script>
-{/if}
+{* Modules will be added here as they are redesigned *}
 
 {*** Google integration ***}
-{include file="modules/widgets/integrations/google_tagsmanager_body.tpl"}
+{* Modules will be added here as they are redesigned *}
 
 {*** Facebook Marketing Pixel integration ***}
-{include file='modules/widgets/integrations/facebook_marketing_pixel.tpl'}
+{* Modules will be added here as they are redesigned *}
 
 {*** ViaBill integration ***}
-{include file="modules/widgets/integrations/viabill_pricetag.tpl" type="script"}
+{* Modules will be added here as they are redesigned *}
 
 {includeScript file='partials/bodyBottom.js.tpl'}
